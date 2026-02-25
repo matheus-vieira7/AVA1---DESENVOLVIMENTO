@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado Livre - Sistema</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { margin-top: 40px; }
+        form { margin-bottom: 30px; padding: 10px; border: 1px solid #ccc; }
+        label { display: block; margin: 5px 0; }
+        input, textarea { width: 100%; padding: 6px; margin-top: 2px; }
+        button { margin-top: 10px; }
+        .produto { border: 1px solid #ccc; padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>🛒 Sistema Mercado Livre</h1>
+
+    <!-- Cadastro de Consumidor -->
+    <h2>Cadastro de Consumidor</h2>
+    <form>
+        <label>Nome: <input type="text" required></label>
+        <label>CPF: <input type="text" required></label>
+        <label>Endereço: <input type="text" required></label>
+        <label>Telefone: <input type="tel" required></label>
+        <label>E-mail: <input type="email" required></label>
+        <label>Senha: <input type="password" required></label>
+        <button type="submit">Cadastrar Consumidor</button>
+    </form>
+
+    <!-- Cadastro de Vendedor -->
+    <h2>Cadastro de Vendedor</h2>
+    <form>
+        <label>Nome: <input type="text" required></label>
+        <label>CPF: <input type="text" required></label>
+        <label>Endereço: <input type="text" required></label>
+        <label>Telefone: <input type="tel" required></label>
+        <label>E-mail: <input type="email" required></label>
+        <label>Senha: <input type="password" required></label>
+        <fieldset>
+            <legend>Dados Bancários</legend>
+            <label>Banco: <input type="text" required></label>
+            <label>Agência: <input type="text" required></label>
+            <label>Conta: <input type="text" required></label>
+        </fieldset>
+        <button type="submit">Cadastrar Vendedor</button>
+    </form>
+
+    <!-- Cadastro de Produto -->
+    <h2>Cadastro de Produto</h2>
+    <form>
+        <label>Foto do Produto: <input type="file"></label>
+        <label>Nome do Produto: <input type="text" required></label>
+        <label>Descrição: <textarea required></textarea></label>
+        <label>Preço: <input type="number" step="0.01" required></label>
+        <label>Prazo de Entrega (dias): <input type="number" required></label>
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+
+    <!-- Lista Simulada de Produtos -->
+    <h3>Produtos Cadastrados (Exemplo)</h3>
+    <div class="produto">
+        <strong>Produto:</strong> Smartphone XYZ<br>
+        <strong>Preço:</strong> R$ 1.299,00<br>
+        <strong>Prazo de entrega:</strong> 7 dias<br>
+        <button>Editar</button>
+        <button>Excluir</button>
+    </div>
+
+</body>
+</html>

@@ -1,1 +1,1 @@
-Avaliação apra faculdade
+Avaliação para a faculdade
